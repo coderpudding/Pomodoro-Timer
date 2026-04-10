@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="app">
+                    <p class="title">Pomodoro Timer</p>
+                    <div class="pomodoro-timer">
+                        <div id="pomodoro-progress"> </div>
+                        <span id="timer">00:00</span>
+
+                        <div class="pomodoro-control">
+                            <button id="switchPause" disabled>
+                                <i class="fa fa-pause"></i> <span>pause</span>
+                            </button>
+                            <button id="switchOn">
+                                <i class="fa fa-play"></i> <span>start</span>
+                            </button>
+
+                        </div>
+                        <p id="status">--</p>
+                        <p class=" title"> Time in minutes</p>
+                        <div class="min-pref">
+                            <label> Pomodoro: <span id="pomodoro-val">25</span></label>
+                            <input type="range" id="slider-pomodoro" min="1" max="60" value="25" />
+                            <label>Break: <span id="break-val">5</span></label>
+                            <input type="range" id="slider-break" min="1" max="60" value="5" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
