@@ -6,7 +6,7 @@ let timer;
 const progress = document.getElementById("pomodoro-progress");
 const clock = document.getElementById("timer");
 const status = document.getElementById("status");
-const switchOn = document.getElementById("switchON");
+const switchOn = document.getElementById("switchOn");
 const switchPause = document.getElementById("switchPause");
 const pomodoroVal = document.getElementById("pomodoro-val");
 const breakVal = document.getElementById("break-val");
@@ -50,10 +50,10 @@ function startTimer(duration, breakTime) {
 }
 
 switchOn.addEventListener("click", () => {
-  const btnText = switchOn.querySelector("spans").textContent;
+  const btnText = switchOn.querySelector("span").textContent;
   const minutes = parseInt(sliderPomodoro.value);
   const breakTime = parseInt(sliderBreak.value);
-  clock.textContent = '${string(minutes).padStart(2, "0")}:00';
+  clock.textContent = `${String(minutes).padStart(2, "0")}:00`;
 
   if (btnText === "start") {
     status.textContent = "working";
@@ -69,7 +69,7 @@ switchOn.addEventListener("click", () => {
     pause = false;
     state = "work";
     switchOn.querySelector("span").textContent = "start";
-    switchOn.querySelector("i").className = "play";
+    switchOn.querySelector("i").className = "fa fa-play";
     switchPause.disabled = true;
     switchPause.querySelector("span").textContent = "pause";
     switchPause.querySelector("i").className = "fa fa-pause";
@@ -81,9 +81,9 @@ switchPause.addEventListener("click", () => {
   const spanText = switchPause.querySelector("span").textContent;
   if (spanText === "pause") {
     switchPause.querySelector("span").textContent = "resume";
-    switchPause.querySelector("i").className = "fa fa- play";
+    switchPause.querySelector("i").className = "fa fa-play";
   } else {
     switchPause.querySelector("span").textContent = "pause";
-    switchPause.querySelector("i").className = "fa fa-Pause";
+    switchPause.querySelector("i").className = "fa fa-pause";
   }
 });
