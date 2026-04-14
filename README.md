@@ -1,6 +1,6 @@
 # Pomodoro Timer
 
-![Pomodoro Timer Preview](preview.png)
+![Pomodoro Timer Preview](preview.png.png)
 A Pomodoro Timer web app built with HTML, CSS and JavaScript.
 
 ## How to Use
