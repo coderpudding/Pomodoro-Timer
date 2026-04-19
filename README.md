@@ -27,14 +27,14 @@ A Pomodoro Timer web app built with HTML, CSS and JavaScript.
 - Pause and resume support
 - Clean dark UI
 
-###Want to contribute?
+## Want to contribute?
 If something's broken or you have an idea that'd genuinely make this better:
 
--Fork it
--Branch off (git checkout -b feature/your-addition)
--Make your changes
--Commit with something descriptive (git commit -m "what and why")
--Push and edit the Readme for the changes
+- Fork it
+- Branch off (git checkout -b feature/your-addition)
+- Make your changes
+- Commit with something descriptive (git commit -m "what and why")
+- Push and edit the Readme for the changes
 
 ## Live Demo
 
